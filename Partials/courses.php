@@ -28,6 +28,16 @@
     </nav>
     <h1>Courses</h1>
 
+
+
+
+<section class="footer">
+
+    Lorem ipsum dolor sit amet consectetur.
+
+
+</section>
+
 </body>
 
 </html>

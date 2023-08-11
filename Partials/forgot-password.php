@@ -21,5 +21,14 @@
 
         <input type="submit" value="Reset Password">
     </form>
+
+
+
+<section class="footer">
+
+Lorem ipsum dolor sit amet consectetur.
+
+
+</section>
 </body>
 </html>

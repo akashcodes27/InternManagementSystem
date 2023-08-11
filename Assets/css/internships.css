@@ -14,8 +14,8 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    
     text-decoration: none;
     color: #333;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -65,3 +65,78 @@
     outline: none;
     font-size: 16px;
 }
+
+
+/* #internship-card1 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card1 a h2{
+    color: white;
+} */
+
+
+#internship-card2 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card2 a h2{
+    color: white;
+}
+#internship-card2 a p{
+    color: white;
+}
+
+
+
+/* #internship-card3 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card3 a h2{
+    color: white;
+} */
+
+
+
+#internship-card4 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card4 a h2{
+    color: white;
+}
+#internship-card4 a p{
+    color: white;
+}
+
+
+#internship-card5 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card5 a h2{
+    color: white;
+}
+#internship-card5 a p{
+    color: white;
+}
+
+
+#internship-card7 a{
+    background-color: rgb(235, 84, 67);
+
+}
+
+#internship-card7 a h2{
+    color: white;
+}
+#internship-card7 a p{
+    color: white;
+}
+

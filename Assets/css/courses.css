@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    /* to enable smooth scrolling  */
+   }
+
+.courses-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:80px;
+}
+
+
+.courses-title-container h1 {
+    color: rgb(235, 84, 67);
+    margin-bottom: 10px;
+
+   
+}
+
+
+
+
+
+
+
+
+
+.course-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    /* background-color: black; */
+}
+
+.course-card {
+    width: 450px;
+    /* Adjust the width of each card */
+    height: 270px;
+    /* Adjust the height of each card */
+    margin: 6px;
+    /* Add margin to create space between cards */
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* margin: 10px; */
+    text-decoration: none;
+}
+
+.course-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-card-content:hover {
+    background-color: rgb(24, 86, 175);
+    color: white; /* Set the text color */
+    border-color: rgb(24, 86, 175); 
+  }
+
+.course-card-content h2 {
+    font-size: 24px;
+    /* Adjust the font size */
+    margin: 0;
+   
+}
+
+.course-card-parent{
+    margin-bottom: 90px;
+}
+
+
+
+#course-card-content2{
+    background-color: white;
+    border: 3px solid black;
+
+}
+
+#course-card-content2:hover {
+    background-color:  rgb(235, 84, 67);
+    color: white; /* Set the text color */
+    border-color:  rgb(235, 84, 67);
+  }
+
+
+
+#course-card-content4{
+    background-color: white;
+    border: 3px solid black;
+
+}
+
+#course-card-content4:hover {
+    background-color:  rgb(235, 84, 67);
+    color: white; /* Set the text color */
+    border-color:  rgb(235, 84, 67);
+  }
+
+
+
+
+#course-card-content6{
+    background-color: white;
+    border: 3px solid black;
+
+}
+
+#course-card-content6:hover {
+    background-color:  rgb(235, 84, 67);
+    color: white; /* Set the text color */
+    border-color:  rgb(235, 84, 67);
+  }
+
+
+
+
+
+#course-card-content2 h2{
+    color: black;
+
+}
+
+#course-card-content4 h2{
+    color: black;
+    
+}
+
+#course-card-content6 h2{
+    color: black;
+    
+}

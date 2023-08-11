@@ -1,128 +1,323 @@
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-   
+    padding: 0;
+    /* font-family: Helvetica, sans-serif; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Nunito', sans-serif;
+    
   }
+
+  .footer{
+    background-color: rgb(209, 209, 209);
+    height:50vh;
+  }
+
+
+
+/* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(235, 84, 67);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(235, 84, 67);
+  }
+
+  /* custom scrollbar */
+
+
+  .custom-hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the HR */
+    background-color: rgb(93, 93, 93); /* Change the background color */
+    margin: 20px 0; /* Add some margin above and below */
+    /* width:80%; */
+    /* margin-left:145px; */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+    /* filter: blur(1px); */
+  }
+
   
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0b6c8f; /* Green background color */
-    padding: 10px 20px;
-    height: 50px; /* Increased height */
+    background-color: transparent;
+    /* padding: 42px 40px;  */
+    /* Adjust height of navbar as needed */
+    padding-right: 40px;
+    padding-left: 90px;
+    padding-top: 29px;
+    padding-bottom: 6px;
+    height: 120px;
+    /* width:100%; */
+    /* border-bottom: 1px solid black; */
   }
   
-  .left-links {
+  .logo {
+    /* Add your logo styles here */
+  }
+  
+  .nav-links {
+    list-style: none;
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Let the navbar links take up the remaining space */
+    justify-content:end; /* Center the navbar links horizontally */
   }
   
-  .left-links a {
+  .nav-links li {
+    margin: 0 10px; /* Add space between the navbar links */
+  }
+  
+  .nav-links li:first-child {
+    margin-left: 0; /* Remove left margin for the first link (logo) */
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0; /* Remove right margin for the last link (Certificate Validator) */
+  }
+  
+  .nav-links li a {
+    color: black; /* Change the color of the navbar links */
     text-decoration: none;
-    color: white; /* White text color */
-    margin-right: 25px; /* Increased spacing */
-    font-weight: bold;
-  }
-  
-  .right-links a {
-    text-decoration: none;
-    color: white; /* White text color */
-    margin-left: 15px;
-    font-weight: bold;
-  }
-  
-  .right-links {
-    display: flex;
-    align-items: center;
+    /* font-weight: bold; */
+    font-size: 20px; /* Adjust font size as needed */
+    padding: 10px 15px;
+    border-radius: 10px; /* Apply rounded corners */
   }
 
-  .home-pg-content{
-    height:90vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+  
+  .certificate-btn a {
+    background-color: rgb(235, 84, 67);
+    color: white;
   }
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Hover effect for links (optional) */
+  .nav-links li a:hover {
+    /* background-color: black;
+    color: white; */
+  }
+  
+  /* Media query for responsive design (optional) */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
+  .home-text{
+    font-family: Helvetica, sans-serif;
+    padding-top:1px;
+    padding-left:50px;
+    z-index: 5;
+    text-align: center;
     
-    /* height: 100vh;  */
-  }
-  
-  .explore-button {
-    padding: 20px 40px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-
-  .explore-button a{
-    color: white;
-    text-decoration: none;
-  }
-  .explore-button:hover {
-    background-color: #45a049;
   }
 
-/* Code for explore opportunities */
+  .home-text p{
+    font-size: 1.8rem;
+    margin:0;
+    margin-top:10px;
+    /* color: #ffffff; */
+  }
 
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+  .gradient-container {
+ 
     position: relative;
-    /* height: 40vh;  */
-  }
+    width: 1381px;
+    height: 440px;
+    z-index:-1
   
-  .header h1 {
-    font-size: 56px; /* Large font size */
-    font-weight: bold;
-    color: #333;
-    position: relative;
-  }
+}
 
 
-  .header h1::after {
-    content: "";
+  .group-5 {
     position: absolute;
-    width: 120px; /* Adjust the width of the underline */
-    height: 4px; /* Adjust the height/thickness of the underline */
-    background-color: #4CAF50; /* Color of the underline */
-    bottom: -15px; /* Distance of the underline from the text */
-    left: 50%; /* Position the underline in the center */
-    transform: translateX(-50%); /* Center the underline horizontally */
-    border-radius: 50px; /* To create the curved shape */
-  }
+    width: 1381px;
+    height: 440px;
+    left:60px;
+    z-index:-1
+}
 
-
-
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
+/* Rectangle 109 */
+/* .rectangle-109 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1381px;
+    height: 440px;
+    background: #FFFFFF;
   
- .card {
-    background-color: #f0f0f0; /* Light greyish color */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Transition effect on hover */
-  }
+    background: radial-gradient(ellipse at center, rgba(237, 98, 91, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
   
-  .card:hover {
-    background-color: #4CAF50; /* Greenish blue color on hover */
-    color: white; /* White text on hover */
-  }
+    top:50px;
+
+    
+} */
+
+/* Ellipse 16 */
+.ellipse-16 {
+    position: absolute;
+    width: 1050px;
+    height: 577px;
+    /* background: rgba(383, 108, 61, 0.9); */
+    background: rgb(235, 84, 67);
+    /* color:rgb(164, 58, 1) */
+    filter: blur(72px);
+    left:185px;
+    top: -49px;
+    border-radius: 50%; 
+    z-index:-2;
+}
+
+
+.card-container-parent{
+  position: absolute;
+  top: 280px;
+  left: 60px;
+  /* border: 1px solid; */
+  background-color: rgba(255, 255, 255);
+  
+  padding: 10px; 
+  font-size: 16px; 
+  width:90%;
+  height: 370px;
+  z-index: 0;
+  
+}
+
+
+
+
+
+
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 800px; */
+  margin:20px;
+ 
+}
+
+.card {
+  width: 250px;
+  height: 220px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 6px 23px rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* text-align: center; */
+  margin-top: 10px;
+  margin-right:40px;
+  margin-left:40px;
+  margin-bottom:40px;
+  text-decoration: none;
+  /* border: 1px solid rgb(31, 0, 0); */
+  color: black;
+
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #ccc; */
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+#explore-btn{
+  padding: 16px 24px; /* Adjust the padding to make the button bigger */
+  background-color: rgb(235, 84, 67); /* Change the button color to orange */
+  color: white; /* Set text color to white */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
+  font-size: 18px; /* Change the font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+#explore-btn:hover {
+  background-color: #ff9900; /* Change the background color on hover */
+}
+
+
+#explore-btn a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.explore-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.intern-icon1{
+  margin-right: 6px;
+}
+
+.intern-icon2{
+  margin-right: 2px;
+}
+
+.intern-icon3{
+  margin-right: 5px;
+}
+
+.home-card-text-container{
+  margin-left:50px;
+}
+
+.card-title{
+  margin-left:50px;
+}
+
+
+
+
+
+
+
+
+
